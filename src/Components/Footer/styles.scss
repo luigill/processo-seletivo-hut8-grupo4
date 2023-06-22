@@ -1,0 +1,90 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+  a, p {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+
+    a {
+      font-size: 1em;
+      line-height: 2.5em;
+    }
+  }
+
+  .footer-address {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+
+    p {
+      line-height: 1em;
+    }
+  }
+
+  .footer-network {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .findUs {
+      p {
+        font-size: 1em;
+        font-weight: bold;
+      }
+    }
+
+    .network-logos {
+      display: flex;
+      gap: 0.5em;
+      margin-top: -20px;
+    }
+  }
+
+  .bottom-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 215px;
+    padding-top: 60px;
+    width: 100%;
+    line-height: 1em;
+    background-color: #64008a;
+
+    img {
+      height: 110px;
+    }
+  }
+
+  .bottom-rights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background: #96d600;
+    color: #fff;
+  }
+}
+
+.networkIcon {
+  width: 30px;
+  height: 30px;
+  margin: -0.5em 0.5em;
+}
