@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './styles.scss';
-import imagemGenerica from '../../assets/camisetaRoxa.png';
 
-export default function Item() {
+export default function Item({ item }) {
   const [contador, setContador] = useState(0);
 
   const decrementarContador = () => {
@@ -16,10 +16,12 @@ export default function Item() {
     setContador(contador + 1);
   };
 
+  console.log(item);
+
   return (
-    <div className="Item">
+    <div className="Item" key={item.id}>
       <div className="itemCard">
-        <img src={imagemGenerica} alt="Imagem genérica" />
+        <img src={(`../../../src/assets/camisetas/${item.imagem}`)} alt="Imagem genérica" />
         <div className="contador">
           <button onClick={decrementarContador}>-</button>
           <p>{contador}</p>
@@ -27,9 +29,18 @@ export default function Item() {
         </div>
       </div>
       <div className="itemDescription">
-        <h3>Camisa genérica</h3>
-        <p>R$ 45.00</p>
+        <h3>{item.nome}</h3>
+        <p>R$ {item.preco.toFixed(2)}</p>
       </div>
     </div>
   );
 }
+
+Item.propTypes = {
+  item: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    nome: PropTypes.string.isRequired,
+    preco: PropTypes.number.isRequired,
+    imagem: PropTypes.string.isRequired,
+  }).isRequired,
+};
