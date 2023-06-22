@@ -1,0 +1,18 @@
+.titleShop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 2em;
+    width: 100%;
+
+    h1{
+        color: #64008a;
+        font-weight: bold;
+        margin-right: 2em;
+    }
+   img{
+    position: absolute;
+    left: 0;
+    margin-left: 2em;
+   }
+}

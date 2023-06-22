@@ -28,11 +28,6 @@ export default function NavMenu() {
           </a>
         </li>
         <li>
-          <a href="/nossos-produtos" className={currentPage === "/nossos-produtos" ? "active" : ""}>
-            Nossos Produtos
-          </a>
-        </li>
-        <li>
           <a href="/nossa-equipe" className={currentPage === "/nossa-equipe" ? "active" : ""}>
             Nossa Equipe
           </a>
