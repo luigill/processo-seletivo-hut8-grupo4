@@ -8,8 +8,7 @@ export default function NavMenu() {
   const [currentPage, setCurrentPage] = useState("");
 
   useEffect(() => {
-    // Obtém a página atual (ou define manualmente)
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.split("/")[1];
     setCurrentPage(currentPath);
   }, []);
 
@@ -18,17 +17,22 @@ export default function NavMenu() {
       <img className="navLogo" src={logo} alt="logo" />
       <ul>
         <li>
-          <a href="/" className={currentPage === "/" ? "active" : ""}>
+          <a href="/" className={currentPage === "" ? "active" : ""}>
             Home
           </a>
         </li>
         <li>
-          <a href="/produtos" className={currentPage === "/produtos" ? "active" : ""}>
+          <a href="/produtos" className={currentPage === "produtos" ? "active" : ""}>
             Produtos
           </a>
         </li>
         <li>
-          <a href="/nossa-equipe" className={currentPage === "/nossa-equipe" ? "active" : ""}>
+          <a href="/nossos-produtos" className={currentPage === "nossos-produtos" ? "active" : ""}>
+            Nossos Produtos
+          </a>
+        </li>
+        <li>
+          <a href="/nossa-equipe" className={currentPage === "nossa-equipe" ? "active" : ""}>
             Nossa Equipe
           </a>
         </li>
