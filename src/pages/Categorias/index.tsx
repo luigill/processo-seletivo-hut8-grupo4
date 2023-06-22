@@ -7,7 +7,15 @@ export default function Categorias(){
     return(
         <>
         <NavMenu/>
-        <h1>Categorias</h1>
+        <section>
+    <h2>Categorias</h2>
+    <ul>
+      <li id="camisetas" className="card">Camisetas</li>
+      <li id="canecas" className="card">Canecas</li>
+      <li id="moletons" className="card">Moletons</li>
+      <li id="broches" className="card">Broches</li>
+    </ul>
+  </section>
         <FooterMenu/>
         </>
     );
