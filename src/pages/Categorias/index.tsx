@@ -6,8 +6,9 @@ import "./styles.scss";
 export default function Categorias(){
     return(
         <>
+        <body className="categoriaBody">
         <NavMenu/>
-        <section>
+        <section className="gridProdutos">
             <h2>Categorias</h2>
                 <ul>
                     <li id="camisetas" className="card">Camisetas</li>
@@ -17,6 +18,7 @@ export default function Categorias(){
                 </ul>
         </section>
         <FooterMenu/>
+        </body>
         </>
     );
 }

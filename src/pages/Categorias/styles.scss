@@ -2,12 +2,12 @@ $color_1: #64008a;
 $color_2: #ffffff;
 $font-family_1: "Montserrat", sans-serif;
 
-body {
+.categoriaBody {
 	font-family: $font-family_1;
 	margin: 0;
 	padding: 0;
 }
-section {
+.gridProdutos {
 	ul {
 		list-style: none;
 	  display: grid;
@@ -15,6 +15,7 @@ section {
     grid-gap: 10px;
 		gap: 80px 30px;
 		padding: 0;
+		margin: 60px;
 	}
   li{
     padding: 20px;
