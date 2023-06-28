@@ -27,9 +27,9 @@
       },
       {
         "id": 5,
-        "nome": "Camiseta minimalista Hut",
+        "nome": "Camiseta Branca Hut",
         "preco": 60.0,
-        "imagem": "../../../src/assets/camisetas/camisetaMinimalista.jpeg"
+        "imagem": "../../../src/assets/camisetas/camisetaBranca.png"
       },
       {
         "id": 6,

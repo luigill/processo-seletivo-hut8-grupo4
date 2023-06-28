@@ -3,39 +3,9 @@
     "items": [
       {
         "id": 1,
-        "nome": "Caneca roxa",
-        "preco": 50.0,
-        "imagem": "camisetaRoxa.png"
-      },
-      {
-        "id": 2,
-        "nome": "Caneca preta com detalhes",
-        "preco": 30.0,
-        "imagem": "camisetaPretaComDetalhes.png"
-      },
-      {
-        "id": 3,
-        "nome": "Caneca Logo Grande Verde",
-        "preco": 40.0,
-        "imagem": "camiseteLogoGrandeVerde.png"
-      },
-      {
-        "id": 4,
-        "nome": "Caneca Logo Grande Preta",
-        "preco": 60.0,
-        "imagem": "camiseteLogoGrandePreta.png"
-      },
-      {
-        "id": 5,
-        "nome": "Caneca minimalista Hut",
-        "preco": 60.0,
-        "imagem": "camisetaMinimalista.jpeg"
-      },
-      {
-        "id": 6,
-        "nome": "Caneca Mockup",
-        "preco": 60.0,
-        "imagem": "camisetaMockup.png"
+        "nome": "Caneca Hut8",
+        "preco": 25.0,
+        "imagem": "../../../src/assets/canecas/canecaHut.png"
       }
     ]
   }

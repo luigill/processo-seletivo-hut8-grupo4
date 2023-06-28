@@ -3,39 +3,9 @@
     "items": [
       {
         "id": 1,
-        "nome": "Moletom roxa",
-        "preco": 50.0,
-        "imagem": "camisetaRoxa.png"
-      },
-      {
-        "id": 2,
-        "nome": "Moletom preta com detalhes",
-        "preco": 30.0,
-        "imagem": "camisetaPretaComDetalhes.png"
-      },
-      {
-        "id": 3,
-        "nome": "Moletom Logo Grande Verde",
-        "preco": 40.0,
-        "imagem": "camiseteLogoGrandeVerde.png"
-      },
-      {
-        "id": 4,
-        "nome": "Moletom Logo Grande Preta",
-        "preco": 60.0,
-        "imagem": "camiseteLogoGrandePreta.png"
-      },
-      {
-        "id": 5,
-        "nome": "Moletom minimalista Hut",
-        "preco": 60.0,
-        "imagem": "camisetaMinimalista.jpeg"
-      },
-      {
-        "id": 6,
-        "nome": "Moletom Mockup",
-        "preco": 60.0,
-        "imagem": "camisetaMockup.png"
+        "nome": "Moletom",
+        "preco": 120.0,
+        "imagem": "../../../src/assets/moletons/Moletom.jpg"
       }
     ]
   }
