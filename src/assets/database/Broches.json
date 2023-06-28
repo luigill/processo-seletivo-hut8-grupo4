@@ -1,0 +1,42 @@
+{
+  "Broches": {
+    "items": [
+      {
+        "id": 1,
+        "nome": "Broche 1",
+        "preco": 50.0,
+        "imagem": "camisetaRoxa.png"
+      },
+      {
+        "id": 2,
+        "nome": "Broche 2",
+        "preco": 30.0,
+        "imagem": "camisetaPretaComDetalhes.png"
+      },
+      {
+        "id": 3,
+        "nome": "Broche 3",
+        "preco": 40.0,
+        "imagem": "camiseteLogoGrandeVerde.png"
+      },
+      {
+        "id": 4,
+        "nome": "Broche 4",
+        "preco": 60.0,
+        "imagem": "camiseteLogoGrandePreta.png"
+      },
+      {
+        "id": 5,
+        "nome": "Broche 5",
+        "preco": 60.0,
+        "imagem": "camisetaMinimalista.jpeg"
+      },
+      {
+        "id": 6,
+        "nome": "Broche 6",
+        "preco": 60.0,
+        "imagem": "camisetaMockup.png"
+      }
+    ]
+  }
+}
