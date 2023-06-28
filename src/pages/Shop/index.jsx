@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 import FooterMenu from '../../Components/Footer';
 import NavMenu from '../../Components/Menu';
 import Arrow from '../../assets/arrow.svg';
@@ -33,7 +34,9 @@ export default function Shop({ category }) {
     <>
       <NavMenu />
       <div className="titleShop">
+      <Link to="/produtos" className="navLogo">
         <img src={Arrow} alt="Seta para trás" />
+      </Link>
         <h1>{category.charAt(0).toUpperCase() + category.slice(1)}</h1>
       </div>
       <section className="items">

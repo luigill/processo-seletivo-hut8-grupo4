@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import user from "../../assets/User.svg";
 import CarrinhoDeCompra from "../../assets/Shopping_Cart.svg";
@@ -14,22 +15,30 @@ export default function NavMenu() {
 
   return (
     <header>
-      <img className="navLogo" src={logo} alt="logo" />
+      <Link to="/" className="navLogo">
+        <img src={logo} alt="logo" />
+      </Link>
       <ul>
         <li>
-          <a href="/" className={currentPage === "" ? "active" : ""}>
+          <Link to="/" className={currentPage === "" ? "active" : ""}>
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/produtos" className={currentPage === "produtos" ? "active" : ""}>
+          <Link
+            to="/produtos"
+            className={currentPage === "produtos" ? "active" : ""}
+          >
             Produtos
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/nossa-equipe" className={currentPage === "nossa-equipe" ? "active" : ""}>
+          <Link
+            to="/nossa-equipe"
+            className={currentPage === "nossa-equipe" ? "active" : ""}
+          >
             Nossa Equipe
-          </a>
+          </Link>
         </li>
         <li>
           <a href="#">

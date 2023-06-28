@@ -1,0 +1,24 @@
+.membros{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .membro{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 5%;
+        h2{
+            margin: 12px auto;
+            color: #64008a;
+        }
+        p{
+            margin: auto 1em;
+        }
+        img{
+            border-radius: 50%;
+        }
+    }
+}

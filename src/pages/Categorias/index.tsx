@@ -12,18 +12,26 @@ export default function Categorias() {
         <section className="gridProdutos">
           <h2>Categorias</h2>
           <ul>
+            <Link className="link" to="/produtos/camisetas">
             <li id="camisetas" className="card">
-              <Link className="link" to="/produtos/camisetas">Camisetas</Link>
+                Camisetas
             </li>
+            </Link>
+            <Link className="link" to="/produtos/canecas">
             <li id="canecas" className="card">
-              <Link className="link" to="/produtos/canecas">Canecas</Link>
+                Canecas
             </li>
+                </Link>
+              <Link className="link" to="/produtos/moletons">
             <li id="moletons" className="card">
-              <Link className="link" to="/produtos/moletons">Moletons</Link>
+                Moletons
             </li>
+                </Link>
+              <Link className="link" to="/produtos/broches">
             <li id="broches" className="card">
-              <Link className="link" to="/produtos/broches">Broches</Link>
+                Broches
             </li>
+                </Link>
           </ul>
         </section>
         <FooterMenu />
