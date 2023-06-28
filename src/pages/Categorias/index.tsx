@@ -13,25 +13,25 @@ export default function Categorias() {
           <h2>Categorias</h2>
           <ul>
             <Link className="link" to="/produtos/camisetas">
-            <li id="camisetas" className="card">
-                Camisetas
-            </li>
+              <li id="camisetas" className="card">
+                <p>Camisetas</p>
+              </li>
             </Link>
             <Link className="link" to="/produtos/canecas">
-            <li id="canecas" className="card">
-                Canecas
-            </li>
-                </Link>
-              <Link className="link" to="/produtos/moletons">
-            <li id="moletons" className="card">
-                Moletons
-            </li>
-                </Link>
-              <Link className="link" to="/produtos/broches">
-            <li id="broches" className="card">
-                Broches
-            </li>
-                </Link>
+              <li id="canecas" className="card">
+                <p>Canecas</p>
+              </li>
+            </Link>
+            <Link className="link" to="/produtos/moletons">
+              <li id="moletons" className="card">
+                <p>Moletons</p>
+              </li>
+            </Link>
+            <Link className="link" to="/produtos/broches">
+              <li id="broches" className="card">
+                <p>Broches</p>
+              </li>
+            </Link>
           </ul>
         </section>
         <FooterMenu />

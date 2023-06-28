@@ -68,19 +68,16 @@ $font-family_1: "Montserrat", sans-serif;
 	border-radius: 1em;
 	color: $color_2;
 	font-size: 1.5em;
-	text-decoration: none;
 	transition: all 0.3s ease-in-out;
-
 	&:hover {
 		transform: scale(1.1);
 		box-shadow: none;
 		cursor: pointer;
 		box-shadow: inset 0px -200px 110px 200px rgba(0, 0, 0, 0.6);
 	}
-
-	a.link {
-		text-decoration: none;
-	  }
+}
+.link{
+	text-decoration: none;
 }
 
 #camisetas {
