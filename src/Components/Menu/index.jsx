@@ -6,9 +6,11 @@ import CarrinhoDeCompra from "../../assets/Shopping_Cart.svg";
 import LoginModal from "../../Components/LoginModal"
 import "./styles.scss";
 
+
 export default function NavMenu() {
   const [currentPage, setCurrentPage] = useState("");
   const [modal, setModal] = useState(false);
+  
 
   useEffect(() => {
     const currentPath = window.location.pathname.split("/")[1];
@@ -56,6 +58,6 @@ export default function NavMenu() {
       </ul>
     </header>
     {modal && <LoginModal closeModal={() => setModal(false)} />}
-    </>
+  </>
   );
 }
