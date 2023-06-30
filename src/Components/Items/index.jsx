@@ -1,58 +1,12 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react';
+import { useState, useContext } from 'react';
 import PropTypes from 'prop-types';
 import './styles.scss';
 
-import camisetasData from '../../assets/database/Camisetas.json';
-
-export function Camisetas() {
-  return (
-    <div>
-       {camisetasData && Array.isArray(camisetasData) && camisetasData.map((item) => (
-        <Item key={item.id} item={item} />
-      ))}
-    </div>
-  );
-}
-
-import canecasData from '../../assets/database/Canecas.json';
-
-export function Canecas() {
-  return (
-    <div>
-      {canecasData && canecasData.map((item) => (
-        <Item key={item.id} item={item} />
-      ))}
-    </div>
-  );
-}
-
-import moletonsData from '../../assets/database/Moletons.json';
-
-export function Moletons() {
-  return (
-    <div>
-      {moletonsData && moletonsData.map((item) => (
-        <Item key={item.id} item={item} />
-      ))}
-    </div>
-  );
-}
-
-import brochesData from '../../assets/database/Broches.json';
-
-export function Broches() {
-  return (
-    <div>
-      {brochesData && brochesData.map((item) => (
-        <Item key={item.id} item={item} />
-      ))}
-    </div>
-  );
-}
+import { CartContext } from '../../context/CartContext';
 
 export default function Item({ item }) {
   const [contador, setContador] = useState(0);
+  const { addToCart } = useContext(CartContext);
 
   const decrementarContador = () => {
     if (contador > 0) {
@@ -62,9 +16,8 @@ export default function Item({ item }) {
 
   const incrementarContador = () => {
     setContador(contador + 1);
+    addToCart(item);
   };
-
-  console.log(item);
 
   return (
     <div className="Item" key={item.id}>
