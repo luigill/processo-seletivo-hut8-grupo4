@@ -50,7 +50,7 @@ export default function Shop({ category }) {
       </div>
       <section className="items">
         {items.map((item) => (
-          <Item key={item.id} item={item} onAddToCart={handleAddToCart} />
+          <Item key={item.id} item={item} onAddToCart={handleAddToCart}  />
         ))}
       </section>
       <FooterMenu />
