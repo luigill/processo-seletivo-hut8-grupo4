@@ -4,12 +4,15 @@ import logo from "../../assets/logo.png";
 import user from "../../assets/User.svg";
 import CarrinhoDeCompra from "../../assets/Shopping_Cart.svg";
 import LoginModal from "../../Components/LoginModal";
+import ShopModal from "../../Components/ShopModal";
 import menuResponsivo from "../../assets/menu-buguer-open.svg";
 import "./styles.scss";
 
 export default function NavMenu() {
   const [currentPage, setCurrentPage] = useState("");
-  const [modal, setModal] = useState(false);
+  const [loginModalOpen, setLoginModalOpen] = useState(false);
+  const [cartModalOpen, setCartModalOpen] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
   const [showResponsiveMenu, setShowResponsiveMenu] = useState(false);
 
   useEffect(() => {
@@ -17,8 +20,21 @@ export default function NavMenu() {
     setCurrentPage(currentPath);
   }, []);
 
+  const toggleLoginModal = () => {
+    setLoginModalOpen(!loginModalOpen);
+  };
+
+  const toggleCartModal = () => {
+    setCartModalOpen(!cartModalOpen);
+  };
+
   const toggleResponsiveMenu = () => {
     setShowResponsiveMenu(!showResponsiveMenu);
+  };
+
+  const addToCart = (item) => {
+    const updatedCartItems = [...cartItems, item];
+    setCartItems(updatedCartItems);
   };
 
   return (
@@ -27,10 +43,7 @@ export default function NavMenu() {
         <Link to="/" className="navLogo">
           <img src={logo} alt="logo" />
         </Link>
-        <button
-          className="buttonMobileMenu"
-          onClick={toggleResponsiveMenu}
-        >
+        <button className="buttonMobileMenu" onClick={toggleResponsiveMenu}>
           <img src={menuResponsivo} alt="Menu" />
         </button>
         <ul className={showResponsiveMenu ? "responsive-menu" : "desktop-menu"}>
@@ -56,18 +69,26 @@ export default function NavMenu() {
             </Link>
           </li>
           <li>
-            <a href="#">
+            <a href="#" onClick={toggleCartModal}>
               <img className="iconMenu" src={CarrinhoDeCompra} alt="" />
             </a>
           </li>
-          <li onClick={() => setModal(true)}>
+          <li onClick={toggleLoginModal}>
             <a href="#">
               <img className="iconMenu" src={user} alt="User" />
             </a>
           </li>
         </ul>
       </header>
-      {modal && <LoginModal closeModal={() => setModal(false)} />}
+      {loginModalOpen && <LoginModal closeModal={toggleLoginModal} />}
+      {cartModalOpen && (
+        <ShopModal
+          closeModal={toggleCartModal}
+          cartItems={cartItems}
+          setCartItems={setCartItems}
+          addToCart={addToCart}
+        />
+      )}
     </>
   );
 }
