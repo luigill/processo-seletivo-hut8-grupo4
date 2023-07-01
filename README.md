@@ -1,4 +1,4 @@
-# processo-seletivo-hut8-grupo4
+[# processo-seletivo-hut8-grupo4
 Repositório utilizado no desenvolvimento da aplicação da Loja da Hut.
 - Membros do Grupo:
   - Lui Gill
@@ -9,3 +9,4 @@ Repositório utilizado no desenvolvimento da aplicação da Loja da Hut.
   ```
 - O projeto foi desenvolvido utilizando React e SCSS.
 - O processo seletivo da Hut8 foi um enorme aprendizado, conhecer novas pessoas e tecnologias traz uma nova perspectiva para a graduação.
+](https://github.com/luigill/processo-seletivo-hut8-grupo4)https://github.com/luigill/processo-seletivo-hut8-grupo4
