@@ -8,22 +8,13 @@ export default function ShopModal({ closeModal }) {
   const { cartItems, addToCart, removeFromCart } = useContext(CartContext);
 
   const handleCheckout = () => {
-    // Lógica para processar a compra dos itens no carrinho
-    // ...
     if (cartItems.length === 0) {
-      alert(
-        "Seu carrinho está vazio. Adicione itens antes de finalizar a compra."
-      );
+      alert("Seu carrinho está vazio. Adicione itens antes de finalizar a compra.");
       return;
     }
 
-    // Calcular o valor total da compra
-    const total = cartItems.reduce(
-      (sum, item) => sum + item.price * item.quantity,
-      0
-    );
+    const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
-    // Exibir um resumo da compra
     alert(`Compra finalizada com sucesso!\nTotal: R$ ${total.toFixed(2)}`);
   };
 
@@ -36,6 +27,7 @@ export default function ShopModal({ closeModal }) {
           {cartItems.map((item) => (
             <li key={item.id}>
               <Item item={item} onAddToCart={addToCart} inModal={true} />
+              <span className="item-quantity">Quantidade: {item.quantity}</span> {/* Exibe a quantidade */}
               <button onClick={() => removeFromCart(item.id)}>Remover</button>
             </li>
           ))}

@@ -16,7 +16,7 @@ export default function Item({ item, inModal }) {
 
   const incrementarContador = () => {
     setContador(contador + 1);
-    addToCart(item, contador);
+    addToCart({ ...item, price: item.preco, quantity: contador + 1 }); // Passa o item com as propriedades corretas
   };
 
   return (
