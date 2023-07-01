@@ -13,7 +13,9 @@ Repositório utilizado no desenvolvimento da aplicação da Loja da Hut.
   ```
   yarn run dev
   ```
-
+  Ou Visite:
+  https://grupo-4-hut-8-5iicm5zhn-marcus-schebek.vercel.app/
+  
 ## Relatos de bordo
 
 - O projeto foi desenvolvido utilizando React-JS, React Router Dom e SCSS.
