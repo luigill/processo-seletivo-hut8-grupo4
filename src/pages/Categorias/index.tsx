@@ -9,6 +9,10 @@ export default function Categorias() {
     <>
       <section className="categoriaBody">
         <NavMenu />
+         <div className="Banner">
+          <h2>Conheça Alguns dos nosso <br/> Projetos Desenvolvidos</h2>
+          <h3>Projetos desenvolvidos em Pelotas e Região</h3>
+        </div>
         <section className="gridProdutos">
           <h2>Categorias</h2>
           <ul>
