@@ -7,7 +7,14 @@ $font-family_1: "Montserrat", sans-serif;
 	margin: 0;
 	padding: 0;
 }
-
+.Banner{
+	height: 40vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.99;
+	background-image: url("http://www.hut8.com.br/static/5b3d8482504fe2079f61004e311e0dc6/42045/projectsbanner.webp");
+}
 .gridProdutos {
 	margin: 25px auto;
 	display: flex;
